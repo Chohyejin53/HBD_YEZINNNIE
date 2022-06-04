@@ -1,0 +1,40 @@
+/* border-radius */
+@mixin border-radius($rad) {
+	-o-border-radius: $rad;
+	-ms-border-radius: $rad;
+	-moz-border-radius: $rad;
+	-webkit-border-radius: $rad;
+	border-radius: $rad;
+}
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+@mixin clear {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin absolute_zero {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+@mixin fixed_zero {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}

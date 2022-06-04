@@ -1,0 +1,26 @@
+{
+  "name": "promotion",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-image": "^6.2.1"
+  },
+  "description": "### 업무별 담당자 | 업무 | 담당자 | 부서 | | -------- | -------- | -------- | | 기획 | 이준호, 권승언 | 그린웹서비스 / DA운영파트 | | 디자인 | 이미현, 강소미 | UI디자인서포트팀 | | 마크업 | 신영화 | 웹표준UI 서포트팀 |",
+  "repository": {
+    "type": "git",
+    "url": "https://oss.navercorp.com/IN-PAY-PARTNER-PROMOTION/PROMOTION_2021.git"
+  }
+}

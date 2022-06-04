@@ -1,0 +1,125 @@
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+table,
+textarea {
+	font-family:'NotoSansR', AppleGothic, sans-serif,'나눔고딕',NanumGothic,'맑은 고딕',malgungothic;
+	font-size: 18px;
+	line-height: normal;
+	letter-spacing: -0.3px;
+	color: #000;
+}
+
+button,
+input,
+a {
+	cursor: pointer;
+}
+
+button{
+    border: none;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+address,
+em {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+.blind {
+	overflow: hidden !important;
+	position: absolute !important;
+	clip: rect(0,0,0,0) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+}
+
+
+/* font */
+@font-face {
+    font-family: 'NotoSansR';
+    src: url("../font/NotoSans/NotoSansKR-Regular-Hestia.otf");
+    src: url("../font/NotoSans/NotoSansKR-Regular-Hestia.eot");
+    src: url("../font/NotoSans/NotoSansKR-Regular-Hestia.eot?#iefix") format("embedded-opentype"),url("../font/NotoSans/NotoSansKR-Regular-Hestia.woff") format("woff"),url("../font/NotoSans/NotoSansKR-Regular-Hestia.ttf") format("ttf");
+}
+@font-face {
+    font-family: 'NotoSansB';
+    src: url("../font/NotoSans/NotoSansKR-Bold-Hestia.otf");
+    src: url("../font/NotoSans/NotoSansKR-Bold-Hestia.eot");
+    src: url("../font/NotoSans/NotoSansKR-Bold-Hestia.eot?#iefix") format("embedded-opentype"),url("../font/NotoSans/NotoSansKR-Bold-Hestia.woff") format("woff"),url("../font/NotoSans/NotoSansKR-Bold-Hestia.ttf") format("ttf");
+}
+@font-face {
+    font-family: 'NotoSansM';
+    src: url("../font/NotoSans/NotoSansKR-Medium-Hestia.otf");
+    src: url("../font/NotoSans/NotoSansKR-Medium-Hestia.eot");
+    src: url("../font/NotoSans/NotoSansKR-Medium-Hestia.eot?#iefix") format("embedded-opentype"),url("../font/NotoSans/NotoSansKR-Medium-Hestia.woff") format("woff"),url("../font/NotoSans/NotoSansKR-Medium-Hestia.ttf") format("ttf");
+}
+@font-face {
+	font-family:'Museo_Sanb_300';
+	src:url("../font/MuseoSlab/Museo_Sanb_300.otf");
+	src:url("../font/MuseoSlab/Museo_Sanb_300.woff") format("woff"),url("../font/MuseoSlab/Museo_Sanb_300.woff2") format("woff2");
+}
+@font-face {
+	font-family:'Museo_Slab_500';
+	src:url("../font/MuseoSlab/Museo_Slab_500.otf");
+	src:url("../font/MuseoSlab/Museo_Slab_500.woff") format("woff"),url("../font/MuseoSlab/Museo_Slab_500.woff2") format("woff2");
+}
+@font-face {
+	font-family:'Museo_Slab_700';
+	src:url("../font/MuseoSlab/Museo_Slab_700.otf");
+	src:url("../font/MuseoSlab/Museo_Slab_700.woff") format("woff"),url("../font/MuseoSlab/Museo_Slab_700.woff2") format("woff2");
+}
+@font-face {
+	font-family:'Museo_Slab_900';
+	src:url("../font/MuseoSlab/Museo_Slab_900.otf");
+	src:url("../font/MuseoSlab/Museo_Slab_900.woff") format("woff"),url("../font/MuseoSlab/Museo_Slab_900.woff2") format("woff2");
+}

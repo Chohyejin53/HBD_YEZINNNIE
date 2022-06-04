@@ -1,0 +1,788 @@
+.wrap {
+    min-width: 320px;
+    box-sizing: border-box;
+
+    canvas{
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        transform: scale(1.1);
+    }
+}
+
+.container {
+    position: relative;
+    .inner {
+        max-width: 375px;
+        min-width: 320px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .title {
+        padding-bottom: 20px;
+        font-family:'Museo_Slab_500', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: #023047;
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .text {
+
+        &.light_gray {
+            font-size: 10px;
+            line-height: 1.1;
+            color: rgb(204, 204, 204);
+        }
+
+        & + .text {
+            margin-top: 3px;
+        }
+    }
+
+    .mo_320 {
+        display: none;
+    }
+    .pc_only {
+        display: block;
+    }
+    
+}
+
+// spot
+.spot {
+
+    .inner {
+        position: relative;
+        padding: 24px 20px 10px;
+    }
+
+    .sub_title {
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        color: #023047;
+    }
+
+    .title {
+        font-family:'Museo_Slab_900', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: #023047;
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .text {
+        margin: 10px 0;
+        font-size: 12px;
+        line-height: 1.3;
+        color: #333;
+        
+    }
+
+    .video_box {
+        width: 100%;
+        height: 188px;
+        margin: 0 auto;
+    }
+}
+
+.info {
+    position: relative;
+    background-color: #d8f3dc;
+
+    &::before {
+        background-color: #d8f3dc;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -57px;
+        height: 57px;
+        z-index: -10;
+    }
+
+    .inner {
+        padding: 10px 20px 32px;
+    }
+
+    .title {
+        position: relative;
+        min-width:11px;
+        height: 12px;
+        width: 280px;
+        margin: 0 auto;
+        white-space: nowrap;
+        color: transparent;
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+
+        &::before {
+            content: "2022년 06월 06일은 한예진 생일!";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: black;
+            overflow: hidden;
+            border-right: 1px solid black;
+            animation: typing 6s steps(23) forwards;
+            
+        }
+    }
+
+    @keyframes typing{
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+
+
+    .text {
+        font-size: 12px;
+        font-weight: normal;
+        color: #666;
+    }
+
+    .button_box {
+        position: relative;
+        display: block;
+        padding: 17px 20px;
+        background-color: #fff;
+    
+        @include border-radius(15px);
+
+        & + .button_box {
+            margin-top: 8px;
+        }
+
+        &.icon_1{
+            margin-top: 12px;
+
+            &::after {
+                content: '🎁';
+                font-size: 40px;
+                position: absolute;
+                top: 14px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        &.icon_2 {
+            margin-bottom: 29px;
+
+            &::after {
+                content: '🤔';
+                font-size: 40px;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+            span {
+                display: block;
+                text-align: left;
+                padding-right: 26px;
+                font-size: 13px;
+                color: #444a61;
+            }
+    
+            em {
+                display: block;
+                text-align: left;
+                padding-right: 26px;
+                font-size: 16px;
+                color: #fb8500;
+            }
+    }
+
+    .sub_title {
+        font-family:'Museo_Slab_700', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #222;
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .sub_text {
+        font-family:'Museo_Slab_500', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+        margin-bottom: 24px;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #666;
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+
+        em {
+            display: block;
+            padding: 5px 0;
+            font-family: 'NotoSansM';
+            font-weight: 800;
+            font-style: italic;
+            font-size: 16px;
+            color: #007f5f;
+        }
+    }
+
+    .tab_list {
+        margin-top: 10px;
+
+        .list_item {
+            position: relative;
+            // height: 65px;
+            padding-left: 74px;
+
+            & + .list_item {
+                margin-top: 17px;
+            }
+
+            &.item_1::before {
+                content: '⏰';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                @include border-radius(50%);
+            }
+
+            &.item_2::before {
+                content: '💸';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                @include border-radius(50%);
+            }
+
+            &.item_3::before {
+                content: '🐾';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 2;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                @include border-radius(50%);
+            }
+
+            p {
+                font-family: 'NotoSansM';
+                font-size: 12px;
+                line-height: 1.2;
+                color: #333;
+                word-break: keep-all;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+
+                em {
+                    font-family: 'NotoSansB';
+                    color: #007f5f;
+                }
+
+                span {
+                    display: block;
+                    margin-top: 3px;
+                    font-size: 10px;
+                    line-height: 1.1;
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+// gift
+.gift {
+    background-color: #fff;
+
+    .inner {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-family:'Museo_Slab_900', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+        height: 52px;
+    }
+
+    .text {
+        margin-bottom: 13px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #666;
+        text-align: left;
+    }
+
+    .gift_list {
+        text-align: center;
+
+        .list_item {
+            background-color: #d8f3dc;
+            padding: 22px 20px 18px;
+            @include border-radius(15px);
+
+            & + .list_item {
+                margin-top: 10px;
+            }
+        }
+
+        .list_title {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 15px;
+            padding: 0 35px;
+            font-family:'Museo_Slab_700', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+
+            font-size: 20px;
+            line-height: 28px;
+            color: #333;
+
+            &::before {
+                content: '🎁';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 28px;
+                height: 28px;
+            }
+
+            &::after {
+                content: '🎁';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .list_text {
+            margin-bottom: 12px;
+            font-family: 'NotoSansR';
+            font-size: 11px;
+            text-align: left;
+            color: #666;
+
+            &.img_des_1 {
+                position: relative;
+                overflow: hidden;
+                padding-right: 130px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -4px;
+                    transform: translateY(-50%);
+                    width: 119px;
+                    height: 168px;
+                    background: #fff url("../img/raw_lab_img.png") no-repeat 0 0;
+                    background-size: 119px auto;
+                    -webkit-background-size: 119px auto;
+                }
+            }
+
+            &.img_des_2 {
+                position: relative;
+                overflow: hidden;
+                padding-right: 130px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -4px;
+                    transform: translateY(-50%);
+                    width: 112px;
+                    height: 168px;
+                    background: #fff url("../img/bag.gif") no-repeat 0 0;
+                    background-size: contain;
+                    -webkit-background-size: contain;
+                }
+            }
+        }
+
+        .video_box {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .img_box {
+            width: 295px;
+
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .search_link_btn {
+            display: block;
+            width: 100%;
+            margin: 14px auto 0;
+            padding: 10px 0;
+            color: #fff;
+            @include border-radius(50px);
+            background-color: #007f5f;
+        }
+
+        .link_text {
+            display: inline-block;
+            position: relative;
+            padding-right: 30px;
+            font-family:'Museo_Slab_500', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #fff;
+
+            &::after {
+                content: '🔍';
+                position: absolute;
+                top: -2px;
+                right: 0;
+                width: 26px;
+                height: 26px;
+                
+            }
+        }
+    }
+}
+
+.detail_list_box {
+    
+    .detail_list {
+        text-align: left;
+        margin-bottom: 11px;
+
+        .list_item {
+            position: relative;
+            padding: 0 0 0 6px;
+            color: #222;
+
+            & + .list_item {
+                margin-top: 0;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 2px;
+                height: 2px;
+                background-color: #222;
+                @include border-radius(50%);
+            }
+
+            a {
+                display: inline-block;
+                font-size: 11px;
+                font-family: "NotoSansB";
+                line-height: 15px;
+                text-decoration: underline;
+                color: #000;
+            }
+        }
+    }
+}
+
+// food_spot
+.food_spot {
+    background-color: #f3f6f9;
+
+    .inner {
+        padding: 30px 20px;
+    }
+
+    .sub_title {
+        margin-top: 30px;
+        font-family:'Museo_Slab_700', AppleGothic, Arial, sans-serif Arial,'Open Sans',-apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue',  Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.6px;
+        color: #222;
+    }
+
+    .text {
+        margin-bottom: 12px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #555;
+    }
+
+    .spot_list {
+        .list_item {
+            background-color: #e4eaf1;
+            padding: 22px 20px 18px;
+            @include border-radius(15px);
+
+            & + .list_item {
+                margin-top: 10px;
+            }
+        }
+
+        .list_title {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #333;
+
+            u {
+                display: block;
+                font-size: 10px;
+                color: #999;
+            }
+        }
+
+        .img_box {
+            width: 295px;
+            padding-bottom: 15px;
+
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .list_text {
+            margin-bottom: 12px;
+            font-family: 'NotoSansR';
+            font-size: 11px;
+            color: #666;
+        }
+
+        .search_link_btn {
+            display: block;
+            width: 100%;
+            margin: 14px auto 0;
+            padding: 10px 0;
+            text-align: center;
+            @include border-radius(50px);
+            background-color: #023047;
+        }
+
+        .link_text {
+            display: inline-block;
+            position: relative;
+            // padding-right: 30px;
+            font-size: 16px;
+            color: #fff;
+
+            // &::after {
+            //     content: '🧭';
+            //     position: absolute;
+            //     top: 0;
+            //     right: 0;
+            //     width: 26px;
+            //     height: 26px;
+            //     vertical-align: middle;
+            // }
+        }
+    }
+
+    
+
+}
+
+// footer
+.footer {
+    background-color: #f3f6f9;
+
+    .inner {
+        padding: 23px 48px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 1.1;
+        color: #007f5f;
+
+        u {
+            display: block;
+            text-align: center;
+            font-size: 10px;
+            line-height: 1;
+            text-decoration: none;
+            color: #666;
+        }
+    }
+    
+    .btn {
+        display: block;
+        height: 40px;
+        padding: 18px 46px 0 20px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: left;
+        color: #007f5f;
+        background-color: #fff;
+        box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.14);
+        @include border-radius(15px);
+
+        & + .btn {
+            margin-top: 8px;
+        }
+
+        &.share {
+            position: relative;
+            margin-top: 15px;
+        
+            &::after {
+                content: '';
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                width: 26px;
+                height: 26px;
+                background: url("../img/btn_share.png") 0 0 no-repeat;
+                background-size: 26px 26px;
+                -webkit-background-size: 26px 26px;
+            }
+        }
+
+        &.sms {
+            position: relative;
+            margin-bottom: 32px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                width: 26px;
+                height: 26px;
+                background: url("../img/btn_mail.png") 0 0 no-repeat;
+                background-size: 26px 26px;
+                -webkit-background-size: 26px 26px;
+            }
+        }
+    }
+    .text {
+        border-top: 1px solid #e1e5ea;
+        padding-top: 20px;
+        font-size: 12px;
+        text-align: center;
+        color: #555;
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .container {
+        .mo_320 {
+            display: block;
+        }
+    
+        .pc_only {
+            display: none;
+        }
+    }
+
+    .info {
+
+        .button_box {
+
+            &.icon_1{
+                &::after {
+                    right: 8px;
+                    font-size: 30px;
+                }
+            }
+
+            &.icon_2 {
+                &::after {
+                    right: 8px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .spot {
+        .video_box  {
+            margin: 0 auto;
+        }
+    }
+    .gift {
+        .gift_list {
+            .img_box {
+                width: 245px;
+            }
+        }
+    }
+
+    .food_spot {
+        .spot_list {
+            .img_box {
+                width: 245px;
+            }
+        }
+    }
+
+    .footer {
+        .btn {
+            height: 30px;
+            padding: 16px 46px 0 20px;
+            font-size: 13px;
+        
+            &.share {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                }
+            }
+
+            &.sms {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
