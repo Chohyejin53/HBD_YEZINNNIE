@@ -265,9 +265,9 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
-	color: black;
+	color: #222;
 	overflow: hidden;
-	border-right: 1px solid black;
+	border-right: 1px solid #222;
 	animation: typing 6s steps(23) forwards;
 }
 
@@ -385,6 +385,7 @@ a:hover {
 
 .info .tab_list .list_item {
 	position: relative;
+	min-height: 60px;
 	padding-left: 74px;
 }
 
@@ -479,7 +480,8 @@ a:hover {
 
 .gift .title {
 	font-family: 'Museo_Slab_900', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
-	height: 52px;
+	font-weight: bolder;
+	font-size: 24px;
 }
 
 .gift .text {
@@ -514,6 +516,7 @@ a:hover {
 	margin-bottom: 15px;
 	padding: 0 35px;
 	font-family: 'Museo_Slab_700', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+	font-weight: bold;
 	font-size: 20px;
 	line-height: 28px;
 	color: #333;
@@ -615,7 +618,7 @@ a:hover {
 	display: inline-block;
 	position: relative;
 	padding-right: 30px;
-	font-family: 'Museo_Slab_500', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+	font-family: 'Museo_Slab_500', -apple-system, Roboto, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
 	color: #fff;
 }
@@ -676,6 +679,18 @@ a:hover {
 	padding: 30px 20px;
 }
 
+.food_spot .title {
+	padding-bottom: 20px;
+	font-family: 'Museo_Slab_500', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	color: #023047;
+	word-break: keep-all;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
 .food_spot .sub_title {
 	margin-top: 30px;
 	font-family: 'Museo_Slab_700', AppleGothic, Arial, sans-serif Arial,'Open Sans',-apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue',  Helvetica, sans-serif;
@@ -709,6 +724,8 @@ a:hover {
 .food_spot .spot_list .list_title {
 	margin-bottom: 15px;
 	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Museo_Slab_700', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif Arial, Helvetica, sans-serif;
 	line-height: 24px;
 	text-align: center;
 	color: #333;
@@ -754,6 +771,7 @@ a:hover {
 .food_spot .spot_list .link_text {
 	display: inline-block;
 	position: relative;
+	font-family: 'Museo_Slab_500', -apple-system, Roboto, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 16px;
 	color: #fff;
 }
@@ -775,6 +793,7 @@ a:hover {
 
 .footer .title u {
 	display: block;
+	margin-top: 6px;
 	text-align: center;
 	font-size: 10px;
 	line-height: 1;
